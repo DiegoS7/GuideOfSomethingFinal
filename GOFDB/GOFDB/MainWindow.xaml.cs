@@ -24,5 +24,16 @@ namespace GOFDB
         {
             InitializeComponent();
         }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            GOFDB.Guide form = new GOFDB.Guide();
+            form.ShowDialog();
+        }
+
+        private void BtnLeave_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

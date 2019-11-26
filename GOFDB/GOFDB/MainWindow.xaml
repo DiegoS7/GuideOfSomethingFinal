@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="Source/Background.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="243,10,0,0" FontFamily="Baskerville Old Face">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF000CFF" Offset="0"/>
+                    <GradientStop Color="Magenta" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Button x:Name="BtnLeave" Content="Leave" HorizontalAlignment="Left" Margin="96,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnLeave_Click"/>
+        <Button x:Name="BtnStart" Content="Start" HorizontalAlignment="Left" Margin="551,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="btnStart_Click"/>
     </Grid>
 </Window>
