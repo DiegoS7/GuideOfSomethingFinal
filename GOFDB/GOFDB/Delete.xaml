@@ -16,7 +16,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
         </TextBox>
-        <Button x:Name="Delete1" Content="Delete" HorizontalAlignment="Left" Margin="212,302,0,0" VerticalAlignment="Top" Width="162" Height="62" FontFamily="Baskerville Old Face" FontSize="36" Background="{x:Null}">
+        <Button x:Name="Delete1" Content="Delete" HorizontalAlignment="Left" Margin="212,302,0,0" VerticalAlignment="Top" Width="162" Height="62" FontFamily="Baskerville Old Face" FontSize="36" Background="{x:Null}" Click="BtnDelete">
             <Button.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFF3FF00" Offset="0"/>

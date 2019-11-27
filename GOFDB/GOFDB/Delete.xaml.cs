@@ -23,5 +23,15 @@ namespace GOFDB
         {
             InitializeComponent();
         }
+
+        private void BtnDelete(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void BtnDcancel(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
