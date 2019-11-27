@@ -18,7 +18,7 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <Button x:Name="BtnLeave" Content="Leave" HorizontalAlignment="Left" Margin="96,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnLeave_Click"/>
-        <Button x:Name="BtnStart" Content="Start" HorizontalAlignment="Left" Margin="551,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="btnStart_Click"/>
+        <Button x:Name="Leave" Content="Leave" HorizontalAlignment="Left" Margin="96,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnLeave"/>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="551,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart"/>
     </Grid>
 </Window>

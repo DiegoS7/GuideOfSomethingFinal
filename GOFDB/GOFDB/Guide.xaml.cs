@@ -24,7 +24,7 @@ namespace GOFDB
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)//btnSubmit
+        private void BtnSubmit(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you sure to send your guide? \"NameGuide\"?", "Guide Of Somenthing", MessageBoxButton.YesNo);
             switch (result)
@@ -39,7 +39,7 @@ namespace GOFDB
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)//btnGoback
+        private void BtnGoback(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you sure to close the window ?", "Guide Of Somenthing", MessageBoxButton.YesNo);
             switch (result)
