@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Source/Background.jpg"/>
         </Grid.Background>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Margin="26,120,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
+        <TextBox HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Margin="26,120,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
@@ -20,8 +20,8 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="243,10,0,0" FontFamily="Baskerville Old Face">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF000CFF" Offset="0"/>
-                    <GradientStop Color="Magenta" Offset="1"/>
+                    <GradientStop Color="#FF09FDA4" Offset="0"/>
+                    <GradientStop Color="#FFFF6800" Offset="1"/>
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
