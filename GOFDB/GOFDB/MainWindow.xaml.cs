@@ -35,5 +35,11 @@ namespace GOFDB
             GOFDB.Guide form = new GOFDB.Guide();
             form.ShowDialog();
         }
+
+        private void BtnRemove(object sender, RoutedEventArgs e)
+        {
+            GOFDB.Delete form = new GOFDB.Delete();
+            form.ShowDialog();
+        }
     }
 }
