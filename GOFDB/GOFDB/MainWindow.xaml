@@ -42,5 +42,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <DataGrid x:Name="dgGuideuser" HorizontalAlignment="Left" Height="202" Margin="126,113,0,0" VerticalAlignment="Top" Width="538"/>
     </Grid>
 </Window>

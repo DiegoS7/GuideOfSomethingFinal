@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GOFDB.Clases;
+using SQLite;
 
 namespace GOFDB
 {
@@ -20,9 +22,25 @@ namespace GOFDB
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Guideuser> guideuser;
         public MainWindow()
         {
             InitializeComponent();
+            guideuser = new List<Guideuser>();
+            ReadDatabase();
+        }
+
+        void ReadDatabase()
+        {
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
+            {
+                conn.CreateTable<Guideuser>();
+                guideuser = (conn.Table<Guideuser>().ToList()).OrderBy(c => c.Username).ToList();
+            }
+            if (guideuser != null)
+            {
+                dgGuideuser.ItemsSource = guideuser;
+            }
         }
 
         private void BtnLeave(object sender, RoutedEventArgs e)
