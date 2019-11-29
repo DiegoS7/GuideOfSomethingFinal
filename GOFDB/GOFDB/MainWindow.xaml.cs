@@ -59,5 +59,11 @@ namespace GOFDB
             GOFDB.Delete form = new GOFDB.Delete();
             form.ShowDialog();
         }
+
+        private void BtnSearch(object sender, RoutedEventArgs e)
+        {
+            GOFDB.Readata form = new GOFDB.Readata();
+            form.ShowDialog();
+        }
     }
 }
