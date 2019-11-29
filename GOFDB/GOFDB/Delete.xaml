@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="Source/Background.jpg"/>
         </Grid.Background>
         <Label Content="Guide Name:" HorizontalAlignment="Left" Margin="186,119,0,0" VerticalAlignment="Top" Height="51" Width="203" Foreground="#FFFFC500" FontFamily="Baskerville Old Face" FontSize="36"/>
-        <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Margin="119,195,0,0" Foreground="White" BorderBrush="#FF00E8FF" FontFamily="Arial" FontWeight="Bold">
+        <TextBox x:Name="txtGuide" HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Margin="119,195,0,0" Foreground="White" BorderBrush="#FF00E8FF" FontFamily="Arial" FontWeight="Bold">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>

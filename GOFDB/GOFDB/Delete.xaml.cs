@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GOFDB.Clases;
+using SQLite;
 
 namespace GOFDB
 {
@@ -26,7 +28,12 @@ namespace GOFDB
 
         private void BtnDelete(object sender, RoutedEventArgs e)
         {
-            
+            using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath))
+            {
+                string sentenciaSQL = "delete from guideuser where Guide='" + txtGuide.Text + "'";
+                conexion.Execute(sentenciaSQL);
+            }
+            Close();
         }
 
         private void BtnDcancel(object sender, RoutedEventArgs e)
