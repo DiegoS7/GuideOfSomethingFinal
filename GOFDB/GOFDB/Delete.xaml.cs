@@ -30,7 +30,7 @@ namespace GOFDB
         {
             using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath))
             {
-                string sentenciaSQL = "delete from guideuser where Guide='" + txtGuide.Text + "'";
+                string sentenciaSQL = "delete from guideuser where Username='" + txtUsername.Text + "'";
                 conexion.Execute(sentenciaSQL);
             }
             Close();
