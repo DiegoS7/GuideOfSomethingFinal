@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GOFDB.Clases;
+using SQLite;
 
 namespace GOFDB
 {
@@ -31,6 +33,18 @@ namespace GOFDB
             {
                 case MessageBoxResult.Yes:
                     MessageBox.Show("Guide sent successfully!!", "Guide OfS");
+                    Guideuser guideuser = new Guideuser()
+                    {
+                        Game = txtGame.Text,
+                        Username = txtUsername.Text,
+                        Guide = txtGuide.Text
+                    };
+                    using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath))
+                    {
+                        conexion.CreateTable<Guideuser>();
+                        conexion.Insert(guideuser);
+                    }
+                    Close();
                     this.Close();
                     break;
                 case MessageBoxResult.No:

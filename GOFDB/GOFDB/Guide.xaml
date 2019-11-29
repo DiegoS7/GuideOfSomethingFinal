@@ -47,7 +47,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Margin="514,120,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Margin="514,120,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
