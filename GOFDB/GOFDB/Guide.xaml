@@ -15,7 +15,14 @@
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="214,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnGoback"/>
+        <Button Content="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="214,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnGoback">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF494949" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <Label Content="Game" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,82,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="243,10,0,0" FontFamily="Baskerville Old Face">
             <TextBlock.Foreground>
@@ -26,18 +33,25 @@
             </TextBlock.Foreground>
         </TextBlock>
         <Label Content="Guide and Tips" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,177,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
-        <Label Content="Image Of The Game" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="514,82,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
-        <TextBox HorizontalAlignment="Left" Height="109" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Margin="26,215,0,0" Foreground="White" BorderBrush="#FF00E8FF" FontFamily="Arial" FontWeight="Bold">
+        <Label Content="Username:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="514,82,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Height="109" TextWrapping="Wrap" VerticalAlignment="Top" Width="674" Margin="26,215,0,0" Foreground="White" BorderBrush="#FF00E8FF" FontFamily="Arial" FontWeight="Bold">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="504,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnSubmit"/>
-        <Image HorizontalAlignment="Left" Height="204" VerticalAlignment="Top" Width="238" Margin="490,120,0,0" Source="Source/katarinaw.jpg" Stretch="Fill">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="Source/katarinaw.jpg"/>
-            </Image.OpacityMask>
-        </Image>
+        <Button Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="504,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnSubmit">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF474747" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Margin="514,120,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
+            <TextBox.Background>
+                <SolidColorBrush Color="Black" Opacity="0.6"/>
+            </TextBox.Background>
+        </TextBox>
 
     </Grid>
 </Window>

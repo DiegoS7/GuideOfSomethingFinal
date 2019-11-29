@@ -18,8 +18,29 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <Button x:Name="Leave" Content="Leave" HorizontalAlignment="Left" Margin="96,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnLeave"/>
-        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="551,328,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart"/>
-        <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="322,328,0,0" VerticalAlignment="Top" Width="110" Height="40" FontSize="20" Click="BtnRemove"/>
+        <Button x:Name="Leave" Content="Leave" HorizontalAlignment="Left" Margin="36,344,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFCFFFD1" Offset="0"/>
+                    <GradientStop Color="#FF8A78FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="649,344,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFF275" Offset="0"/>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="340,344,0,0" VerticalAlignment="Top" Width="110" Height="40" FontSize="20" Click="BtnRemove">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE0EAA2" Offset="0"/>
+                    <GradientStop Color="#FFD14646" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
