@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using GOFDB.Clases;
 using SQLite;
+
 namespace GOFDB
 {
     /// <summary>
@@ -32,7 +33,10 @@ namespace GOFDB
 
         private void BtnSearch(object sender, RoutedEventArgs e)
         {
-            
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
+            {
+               
+            }
         }
     }
 }
