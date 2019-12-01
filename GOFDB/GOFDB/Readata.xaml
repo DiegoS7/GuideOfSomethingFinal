@@ -26,7 +26,19 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <DataGrid x:Name="dgGuideuser" HorizontalAlignment="Left" Height="232" Margin="58,116,0,0" VerticalAlignment="Top" Width="666"/>
+        <DataGrid x:Name="dgGuideuser" HorizontalAlignment="Left" Height="232" Margin="58,116,0,0" VerticalAlignment="Top" Width="666">
+            <DataGrid.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF23FD00" Offset="0"/>
+                    <GradientStop Color="#FF570EF3" Offset="1"/>
+                    <GradientStop Color="#FF008E81" Offset="0.517"/>
+                    <GradientStop Color="#FF078A97" Offset="0.507"/>
+                </LinearGradientBrush>
+            </DataGrid.BorderBrush>
+            <DataGrid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </DataGrid.Background>
+        </DataGrid>
         <Label Content="Guides" HorizontalAlignment="Left" Margin="347,74,0,0" VerticalAlignment="Top" Width="83" FontSize="24" FontFamily="Baskerville Old Face" FontWeight="Bold">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
