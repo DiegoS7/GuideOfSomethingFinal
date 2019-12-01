@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GOFDB"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="500">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Source/Background.jpg"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="245,10,0,0" FontFamily="Baskerville Old Face">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="100,10,0,0" FontFamily="Baskerville Old Face">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF00FFD1" Offset="0"/>
@@ -26,7 +26,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="649,344,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart">
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="36,107,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFFFF275" Offset="0"/>
@@ -34,7 +34,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="434,344,0,0" VerticalAlignment="Top" Width="110" Height="40" FontSize="20" Click="BtnRemove">
+        <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="344,344,0,0" VerticalAlignment="Top" Width="110" Height="40" FontSize="20" Click="BtnRemove">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFE0EAA2" Offset="0"/>
@@ -42,7 +42,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="245,344,0,0" VerticalAlignment="Top" Width="110" Height="40" FontSize="20" Click="BtnSearch">
+        <Button Content="Search" HorizontalAlignment="Left" Margin="344,107,0,0" VerticalAlignment="Top" Width="110" Height="40" FontSize="20" Click="BtnSearch">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
