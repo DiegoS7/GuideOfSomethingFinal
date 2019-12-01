@@ -21,22 +21,30 @@ namespace GOFDB
     /// </summary>
     public partial class Readata : Window
     {
+        List<Guideuser> guideuser;
         public Readata()
         {
             InitializeComponent();
+            guideuser = new List<Guideuser>();
+            ReadDatabase();
+        }
+
+        void ReadDatabase()
+        {
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
+            {
+                conn.CreateTable<Guideuser>();
+                guideuser = (conn.Table<Guideuser>().ToList()).OrderBy(c => c.Username).ToList();
+            }
+            if (guideuser != null)
+            {
+                dgGuideuser.ItemsSource = guideuser;
+            }
         }
 
         private void BtnGoback(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void BtnSearch(object sender, RoutedEventArgs e)
-        {
-            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
-            {
-               
-            }
         }
     }
 }

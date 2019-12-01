@@ -10,12 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Source/Background.jpg"/>
         </Grid.Background>
-        <TextBox x:Name="txtGame" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Margin="57,176,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
-            <TextBox.Background>
-                <SolidColorBrush Color="Black" Opacity="0.6"/>
-            </TextBox.Background>
-        </TextBox>
-        <Button Content="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="365,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnGoback">
+        <Button Content="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="354,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnGoback">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -23,7 +18,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="Game" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="57,143,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="243,10,0,0" FontFamily="Baskerville Old Face">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -32,26 +26,7 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <Label Content="Guide and Tips" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="57,207,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
-        <Label Content="Username:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="302,74,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
-        <TextBox x:Name="txtGuide" HorizontalAlignment="Left" Height="109" TextWrapping="Wrap" VerticalAlignment="Top" Width="674" Margin="57,245,0,0" Foreground="White" BorderBrush="#FF00E8FF" FontFamily="Arial" FontWeight="Bold">
-            <TextBox.Background>
-                <SolidColorBrush Color="Black" Opacity="0.6"/>
-            </TextBox.Background>
-        </TextBox>
-        <Button Content="Search guide" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="413,80,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="BtnSearch">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF4499FF" Offset="0"/>
-                    <GradientStop Color="#FFFFA5A5" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Margin="302,112,0,0" Foreground="White" BorderBrush="#FF00F3FF" FontWeight="Bold" FontFamily="Arial">
-            <TextBox.Background>
-                <SolidColorBrush Color="Black" Opacity="0.6"/>
-            </TextBox.Background>
-        </TextBox>
+        <DataGrid x:Name="dgGuideuser" HorizontalAlignment="Left" Height="232" Margin="58,116,0,0" VerticalAlignment="Top" Width="666"/>
 
     </Grid>
 </Window>
