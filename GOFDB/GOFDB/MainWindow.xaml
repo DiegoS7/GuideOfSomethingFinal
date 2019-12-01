@@ -26,7 +26,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="36,107,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart">
+        <Button x:Name="Start" Content="Upload" HorizontalAlignment="Left" Margin="36,107,0,0" VerticalAlignment="Top" Width="104" Height="40" FontSize="20" Click="BtnStart">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFFFF275" Offset="0"/>
