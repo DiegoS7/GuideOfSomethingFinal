@@ -51,5 +51,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Image HorizontalAlignment="Left" Height="187" Margin="70,152,0,0" VerticalAlignment="Top" Width="284" Source="Source/logow.png" Stretch="UniformToFill"/>
     </Grid>
 </Window>
