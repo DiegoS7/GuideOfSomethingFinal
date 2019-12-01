@@ -27,6 +27,14 @@
             </TextBlock.Foreground>
         </TextBlock>
         <DataGrid x:Name="dgGuideuser" HorizontalAlignment="Left" Height="232" Margin="58,116,0,0" VerticalAlignment="Top" Width="666"/>
+        <Label Content="Guides" HorizontalAlignment="Left" Margin="347,74,0,0" VerticalAlignment="Top" Width="83" FontSize="24" FontFamily="Baskerville Old Face" FontWeight="Bold">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1DFFE0" Offset="0"/>
+                    <GradientStop Color="#FFD100FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
 
     </Grid>
 </Window>
